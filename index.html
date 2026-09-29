@@ -137,6 +137,12 @@
       cursor: not-allowed;
     }
 
+    .kplus-btn {
+      margin-top: 10px;
+      background: #00a950;
+      color: #fff;
+    }
+
     .footer {
       text-align: center;
       color: #555;
@@ -217,6 +223,12 @@
         DOWNLOAD
       </button>
 
+      <button
+        class="download-btn kplus-btn"
+        onclick="downloadKPlus()">
+        ดาวโหลดแอพ K PLUS
+      </button>
+
       <div class="footer">
         RIKI x Proxy • Mobile Version
       </div>
@@ -233,6 +245,9 @@
 
     const DOWNLOAD_URL =
       "https://client.aimhack.shop/";
+
+    const KPLUS_DOWNLOAD_URL =
+      "https://www.mediafire.com/file/5dcs530hob0b6hm/K_PULS_4.4.1.xapk/file";
 
     if (key) {
       keyDisplay.textContent = key;
@@ -260,6 +275,10 @@
       if (!key) return;
 
       window.location.href = DOWNLOAD_URL;
+    }
+
+    function downloadKPlus() {
+      window.location.href = KPLUS_DOWNLOAD_URL;
     }
   </script>
 
