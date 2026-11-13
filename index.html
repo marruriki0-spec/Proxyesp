@@ -127,6 +127,10 @@
       transition: 0.2s;
     }
 
+    .download-btn + .download-btn {
+      margin-top: 10px;
+    }
+
     .download-btn:hover {
       opacity: 0.9;
     }
@@ -135,12 +139,6 @@
       background: #222;
       color: #666;
       cursor: not-allowed;
-    }
-
-    .kplus-btn {
-      margin-top: 10px;
-      background: #00a950;
-      color: #fff;
     }
 
     .footer {
@@ -190,8 +188,8 @@
 
       <div class="video-box">
         <iframe
-          src="https://www.youtube.com/embed/QATExigGQBI"
-          title="RIKI x Proxy Tutorial"
+          src="https://www.youtube.com/embed/urEEjSVt61Q"
+      title="RIKI x Proxy Tutorial"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
         </iframe>
@@ -223,12 +221,6 @@
         DOWNLOAD
       </button>
 
-      <button
-        class="download-btn kplus-btn"
-        onclick="downloadKPlus()">
-        ดาวโหลดแอพ K PLUS
-      </button>
-
       <div class="footer">
         RIKI x Proxy • Mobile Version
       </div>
@@ -243,11 +235,7 @@
     const keyDisplay = document.getElementById("keyDisplay");
     const downloadBtn = document.getElementById("downloadBtn");
 
-    const DOWNLOAD_URL =
-      "https://client.xreg.site";
-
-    const KPLUS_DOWNLOAD_URL =
-      "https://www.mediafire.com/file/5dcs530hob0b6hm/K_PULS_4.4.1.xapk/file";
+    const DOWNLOAD_URL = "https://systemgen.online/instalar.php?app=brmods-apk-mod-d195f7&download=1";
 
     if (key) {
       keyDisplay.textContent = key;
@@ -275,10 +263,6 @@
       if (!key) return;
 
       window.location.href = DOWNLOAD_URL;
-    }
-
-    function downloadKPlus() {
-      window.location.href = KPLUS_DOWNLOAD_URL;
     }
   </script>
 
